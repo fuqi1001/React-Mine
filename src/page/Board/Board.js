@@ -24,6 +24,7 @@ const flagMap = {
 
 
 const Board = ({...props}) => {
+
   const { gameMode, gameSize } = props;
   const [col, setCol] = useState(gameSize[0]);
   const [row, setRow] = useState(gameSize[1]);
@@ -174,7 +175,7 @@ const Board = ({...props}) => {
 
   return(
     <div className="board">
-      <p>{content}</p>
+      <p><span onClick={() => init()}>{content}</span></p>
       <ul className='main-board' style={boardWidth(row)}>
         {blockObject.map((block, index) => (
           <li 
