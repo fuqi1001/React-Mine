@@ -1,0 +1,27 @@
+.board {
+  p {
+    text-align: center;
+    font-size: 24px;
+  }
+  .main-board {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding: 20px;
+    li {
+      list-style: none;
+      width: 30px;
+      height: 30px;
+      margin: 2px;
+      box-shadow: 0 1px 6px #716e77;
+      background-color: #ecd6c7;
+      text-align: center;
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      transition: all .3s ease;
+      cursor: pointer;
+    }
+  }
+  
+}

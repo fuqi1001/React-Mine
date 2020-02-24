@@ -1,0 +1,61 @@
+.setting{
+  margin: 12px 12px;
+  display: flex;
+  flex-direction: column;
+
+  &-size, &-mode {
+    flex-direction: row;
+    .btn {
+      width: 120px;
+      font-size: 18px;
+      line-height: 18px;
+      padding: 8px 12px;
+      color: #a39e9e;
+      background-color: #fff;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 2px 6px #a39e9e;
+      cursor: pointer;
+      transition: all 0.5s;
+      span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      span:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+    }
+    
+    .btn:hover {
+      span {
+        padding-right: 25px;
+      }
+      span:after {
+        opacity: 1;
+        right: 0;
+      }
+    }
+
+    .btn:first-child {
+      margin-right: 12px;
+    }
+    .btn:last-child {
+      margin-left: 12px;
+    }
+    .selected {
+      color:#bc8420;
+      background-color: #f6f6f6;
+    }
+  }
+  
+  .marg {
+    margin-top: 20px;
+  }
+}
