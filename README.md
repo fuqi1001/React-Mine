@@ -8,7 +8,9 @@ Step 1: yarn install
 
 Step 2: yarn start
 
-And the application is listening on port 3000, visit the localhost:3000
+And the application is listening on port 3000, visit the localhost:3000.
+
+Click the little emoji to restart.
 
 Using as many hooks as possible.
 
