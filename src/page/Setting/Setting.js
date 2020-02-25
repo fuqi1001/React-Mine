@@ -12,6 +12,11 @@ function checkMode(curMode, mode) {
   return '';
 }
 
+/**
+ * This component be used to handle to setting of the game board
+ * 3 different size of board
+ * 3 different mode of game, means different probability of mines.
+ */
 const Setting = ({...props}) => {
   
   const { gameSize, gameMode, setGameSize, setGameMode } = props;
